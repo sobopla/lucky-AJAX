@@ -16,15 +16,7 @@ into one that just updates the portion of the DOM that needs to change.
 
 ### Release 0:  Up and Running
 
-To get started, you should use the application skeleton in `./source`.
-
-After you download the skeleton, you should `bundle` your gems and run
-`shotgun` to see how the app works in its current form:
-
-```bash
-$ bundle
-$ bundle exec shotgun
-```
+Download the app and take it for a spin. It's working as-is, just without any AJAX. Be sure you understand how it works before moving on to the next section.
 
 ### Release 1: Figure Out What to Change
 
