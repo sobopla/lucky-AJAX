@@ -5,7 +5,7 @@ end
 
 # TODO: convert this route to use AJAX
 post '/rolls' do
-  @roll = Roll.create(value: params[:value])
+  @die = Die.new(params[:sides].to_i)
 
   erb :index  # HINT: what does this do? what should we do instead?
 end
