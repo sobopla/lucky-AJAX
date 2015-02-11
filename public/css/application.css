@@ -19,7 +19,13 @@ a#roll {
   font-weight: bold;
 }
 
-#die {
-  height: 85px;
-  margin-top: 20px;
+.die {
+  font-size: 2em;
+  padding: 20px;
+}
+
+.roll {
+  border: solid 2px #666;
+  padding: 20px;
+  background-color: orange;
 }
