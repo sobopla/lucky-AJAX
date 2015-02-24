@@ -26,9 +26,8 @@ code need to change. Specifically:
 
 1. What happens when you click the "Roll the Die" button?
 2. What *should* happen instead?
-3. Is it necessary to change any of the ActiveRecord models or migrations?
-4. Is it necessary to change any of the Sinatra routes?
-5. Where should your JavaScript code that handles the AJAX and DOM updates go?
+3. Is it necessary to change any of the Sinatra routes?
+4. Where should your JavaScript code that handles the AJAX and DOM updates go?
 
 ### Release 2: AJAXify It!
 
