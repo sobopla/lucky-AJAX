@@ -4,7 +4,7 @@ class Die
   attr_accessor :value, :sides
 
   def initialize(sides)
-    if sides <= 0 || nil
+    if sides.nil? || sides <= 0
       @sides = DEFAULT_SIDES
     else
       @sides = sides
