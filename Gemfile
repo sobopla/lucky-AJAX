@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 ruby '2.2.2'
 
 gem 'rake'
-gem 'pg' # PostgreSQL driver
+gem 'pg'
 gem 'sinatra'
-gem 'activerecord', '~>4.1'
+gem 'activerecord'
 
 group :development do
   gem 'shotgun'
