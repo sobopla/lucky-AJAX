@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	$("#die_action").submit(function(event){
+		event.preventDefault();
+	})
+	
 
   // PSEUDO-CODE:
   //   1- intercept the form submission event using jQuery
