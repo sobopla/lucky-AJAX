@@ -15,9 +15,18 @@ $(document).ready(function () {
 		//update span class with the ajax response
 		.done(function(dataReturn) {
 			$("div#die-container").html('<div class="die"><span class="roll">' + dataReturn + "</span></roll>");
+			// In the AJAX version, the URL loaded in the browser is always /
+			// and the page is only rendered via index.erb on the first load.
+			// On that load, @die is not set.  So the <div class="die"> is not
+			// displayed.  We can't just fill in the contents of <span class="roll">
+			// because they won't get displayed.  We need to fill in all of the HTML
+			// inside the "if @die" block.
+	
+	
 		})
 	})
 	
+
 
   // PSEUDO-CODE:
   //   1- intercept the form submission event using jQuery

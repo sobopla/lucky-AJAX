@@ -1,13 +1,20 @@
 get '/' do
-  erb :index
+	# @die = Die.new(1) this would be better to go here then we wouldn't have to put the dom structure in the ajax done block handler. Just keep the damn die set to ONE EVERY TIME YOU LOAD!!!!!
+	erb :index
 end
 
 
 # TODO: convert this route to use AJAX
 post '/rolls' do
-  @die = Die.new(params[:sides].to_i)
+
+	@die = Die.new(params[:sides].to_i)
+
+	if request.xhr? #would you only roll here and take out in the erb?
+		@die.roll.to_s
+	else
 
   erb :index  # HINT: what does this do? what should we do instead?
+end
 end
 
 # 1. What happens when you click the "Roll the Die" button?
